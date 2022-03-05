@@ -60,7 +60,7 @@ router.post("/login", async (req, res) => {
     };
     jwt.sign(
       payload,
-      process.env.SECRET_KEY,
+      'ilovetocode',
       {
         expiresIn: 31556926, // 1 year in seconds
       },

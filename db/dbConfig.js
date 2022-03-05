@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const connectDB = async () => {
   try {
-    const uri = process.env.MONGO_URI;
+ const uri = "mongodb+srv://grace:ginaluv1234@cluster0.a8zji.mongodb.net/WAAW_BLOG?retryWrites=true&w=majority";
     await mongoose
       .connect(uri, {
         useNewUrlParser: true,
