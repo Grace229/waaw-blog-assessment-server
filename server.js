@@ -23,10 +23,10 @@ function setupServer() {
   app.use("/api/users", userRoutes);
   app.use("/api/comments", commentRoutes);
   app.use("/api/auth", authRoutes);
-  app.use(express.static(path.join(__dirname, "./../client/build")));
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./../client/build", "index.html"));
-  });
+  // app.use(express.static(path.join(__dirname, "./../client/build")));
+  // app.get("*", (req, res) => {
+  //   res.sendFile(path.join(__dirname, "./../client/build", "index.html"));
+  // });
 }
 
 function middlewares() {

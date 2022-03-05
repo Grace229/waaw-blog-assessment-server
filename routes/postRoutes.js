@@ -13,6 +13,7 @@ const router = express.Router();
 router.get("/", async (req, res) => {
   try {
     const posts = await getAllPosts();
+  console.log(posts)
     res.send(posts);
   } catch (error) {
     console.log(error);
